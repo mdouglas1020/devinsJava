@@ -1,0 +1,72 @@
+Java Mid Term
+- Keywords: new, super, access modifiers
+
+- B and A are classes; D,C, and E are interfaces; Which cannot happen?
+  - B implements A
+  - A implements B
+
+- Which of the following is not a method of java.util.ArrayList?
+  -length()
+  -get(int i, Object x) <-- This is because the parameters are fucked
+  -insert(int i, Object x)
+
+- What is the minimum set of methods that must be defined in class X for it to compile with no errors?
+
+  public interface M {
+    void m1();
+  }
+
+  public interface N extends M {
+    void m2();
+    String m3();
+  }
+
+  public class Y implements M{
+    public void m1() {}
+    public void m2() {}
+    public String m3() {}
+  }
+
+  public class X extends Y implements N{
+    public X() {}
+  }
+
+    - NONE because Class Y provides methods for both interfaces
+
+  - Know what you can and can't do with implementing and extending classes.
+    - Question 30 on Online Midterm
+
+  - What is the super class for all Exception and Error classes?
+    - Throwable
+
+  - What can the 'super' keyword be used to do?
+    - Invoke the super class's constructor.
+    - Refer to super class's instance variable
+    - Invoke the super class's method
+
+  - How can you force a non-abstract class to implement a set of methods?
+    - Make the class inherit from an abstract class.
+    - Make the class implement an interface.
+    - Have a superclass abstract with abstract methods and the subclass will extend the abstract superclass
+
+  - int, short, byte can all hold a 0 without putting a 0.0 at the end
+
+  - When programming in Java, consider the following keywords and select the one(s) that would be used to create a object.
+    - new
+
+  - What needs to start with a capital letter?
+    - Interfaces and Classes
+
+  - What is the best definition of an object?
+    - An object consist of state and behavior
+    - an instance of a class
+    - Class object is the root of the class hierarchy
+
+  - If a Java programmer decides to define multiple methods in a class which are differentiated by method signature then what would this process be called ?
+    - Function overloading
+
+  - To declare a class named N with a single generic type, which of the following should be used?
+    - public class N<E> {  }
+
+  Questions to go over at office hours
+  - 13, 35, 
